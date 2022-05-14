@@ -10,8 +10,6 @@ def lambda_handler(event, context):
         "mongodb+srv://admin:admin@mongomanojcluster.bsqoa.mongodb.net/pharmadb?retryWrites=true&w=majority")
     db = client.pharmadb
 
-    mycollection = db['organizations']
-
     rec = {
         'orgName': 'Manoj xxx',
         'gstNo': '0000',
